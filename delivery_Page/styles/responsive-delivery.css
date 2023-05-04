@@ -1,0 +1,74 @@
+@media (max-width: 768px){
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+   
+}
+
+/*Responsive for Tablet and Mobile*/
+@media (max-width:1024px){
+    .nav-pc__wrap{
+        display: none;
+    }
+    .submit-form{
+        background-color: transparent;
+        justify-content: center;
+    }
+    .submit-form__input{
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .submit-form__btn{
+        margin-top: 10px;
+        margin-left: -5px;
+    }
+    .footer-nav__list, .footer-nav__social{
+        justify-content: center;
+    }
+    .footer-nav__social{
+        margin-top: 25px;
+    }
+    .nav-pc-scroll{
+        display: none;
+    }
+    .nav-mobile-scroll{
+        display: block;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .nav-mobile-scroll__logo img, .nav-mobile__logo img{
+        width: 93px;
+        height: 60px;
+        object-fit: contain;
+    }
+    .nav-mobile__wrap{
+        display: block;
+        background-color: white;
+    }
+    .nav-mobile{
+        padding: 18px 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .nav-moblie__icon-nav,.nav-moblie-scroll__icon-nav{
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size:22px;
+    }
+
+    .delivery-other__item{
+        margin-top: 30px;
+    }
+
+    .map-content__text{
+        margin-bottom: 30px;
+    }
+    #map{
+        height: 350px;
+    }
+}

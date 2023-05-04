@@ -1,0 +1,67 @@
+@keyframes headerAnimation{
+    from{
+        opacity: 0;
+        top: -100%;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes aboutMenu{
+    from{
+        opacity: 0;
+        top: 0;
+    }
+    to{
+        opacity: 1;
+        top: 40px;
+    }
+}
+
+@keyframes backgroundNewProduct{
+    0%{
+        top: 50%;
+        opacity:1;
+    }
+    50%{
+        top: 45%;
+        opacity:0.8;
+    }
+    100%{
+        top: 50%;
+        opacity:1;
+    }
+}
+
+@keyframes imageNewProduct{
+    0% {
+        margin-top: 0;
+    }
+    50%{
+        margin-top: -30px;
+    }
+    100%{
+        margin-top: 0;
+    }
+    
+}
+
+@keyframes loadingAnimation{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}

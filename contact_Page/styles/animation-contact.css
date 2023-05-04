@@ -1,0 +1,21 @@
+@keyframes headerAnimation{
+    from{
+        opacity: 0;
+        top: -100%;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes aboutMenu{
+    from{
+        opacity: 0;
+        top: 0;
+    }
+    to{
+        opacity: 1;
+        top: 40px;
+    }
+}

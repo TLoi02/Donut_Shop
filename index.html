@@ -1,0 +1,787 @@
+‹‹<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./home_Page/styles/animation-home.css">
+    <link rel="stylesheet" href="./home_Page/styles/styles-home.css">
+    <link rel="stylesheet" href="./module_Styles/responsive.css">
+    <link rel="stylesheet" href="./home_Page/styles/responsive-home.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-pc__wrap">
+            <div class="container-xl">
+                <div class="nav-pc">
+                    <div class="nav-pc__list">
+                        <a href="./index.html">
+                            <div class="nav-pc__logo">
+                                <img src="../Main-image/logo.png" alt="">
+                            </div>
+                        </a>
+                        <div class="nav-pc__links">
+                            <div class="nav-pc__item">
+                                <a href="./index.html">
+                                    <span class="nav-pc__item__title">
+                                        HOME
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="nav-pc__item nav-pc__title-about">
+                                <span class="nav-pc__item__title">
+                                    ABOUT
+                                </span>
+                                <div class="nav-pc__about">
+                                    <div class="nav-pc__about__item">
+                                        <a href="./about-us_Page/index_about-us.html">
+                                            <span class="nav-pc__about__item__title">
+                                                ABOUT US
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="nav-pc__about__item">
+                                        <a href="./delivery_Page/index-delivery.html">
+                                            <span class="nav-pc__about__item__title">
+                                                DELIVERY
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="nav-pc__about__item">
+                                        <a href="../contact_Page/index-contact.html">
+                                            <span class="nav-pc__about__item__title">
+                                                CONTACT
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-pc__item">
+                                <a href="./blog_Page/index-blog.html">
+                                    <span class="nav-pc__item__title">
+                                        BLOG
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-pc__list">
+                        <div class="nav-pc__list__cart-phone">
+                            <div class="nav-pc__list__cart-phone__title">
+                                <span>Order by phone</span>
+                            </div>
+                            <div class="nav-pc__list__cart-phone__number">
+                                <a href="tel:0769724974">
+                                    0769-724-974
+                                </a>
+                            </div>
+
+                            <!--Cart Layout-->
+                            <div class="cart-pc__layout">
+                                <div class="cart-pc__layout__noitem active">
+                                    No products in the cart.
+                                </div>
+                                <div class="cart__pc__layout__content">
+                                    <div class="cart__pc__layout__content__list">
+                                       
+                                    </div>
+                                    <div class="cart__pc__layout__content__price">
+                                        <div class="cart__pc__layout__content__text">
+                                            Subtotal: 
+                                        </div>
+                                        <div class="cart__pc__layout__content__price__content">
+                                            $ <span class="cart__pc__layout__content__price__content__value">
+                                               12
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="cart__pc__layout__content__button">
+                                        <div class="cart__pc__layout__content__button__item">
+                                            <a href="./cart_Page/index_cart.html">
+                                                VIEW CART
+                                            </a>
+                                        </div>
+                                        <div class="cart__pc__layout__content__button__item">
+                                            <a href="./check-out_Page/index_check-out.html">
+                                                CHECK OUT
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-pc__list__cart" onclick="handelCartLayout()">
+                            <div class="product-pc__list__cart-icon">
+                                <i class="ti-shopping-cart"></i>
+                            </div>
+                            <div class="product-pc__list__cart-value">
+                                <span class="product-pc__list__cart-value__content">
+                                </span>
+                            </div>
+                        </div>
+                        <a href="../menu_Page/index-menu.html" class="nav-wrap__link">
+                            <div class="nav-pc__menu">
+                                VIEW FULL MENU
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-mobile__wrap">
+            <div class="container-xl">
+                <div class="nav-mobile">
+                    <div class="nav-mobile__logo">
+                        <img src="../Main-image/logo.png" alt="">
+                    </div>
+                    <div class="nav-moblie__icon-nav" onclick="handelNavMobile()">
+                        <i class="ti-menu"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="header__content__title">
+                Donuts to your home desk
+            </div>
+            <div class="header__content__child">
+                <a href="./menu_Page/index-menu.html">
+                    <div class="header__content__child__btn">
+                        ORDER ONLINE
+                    </div>
+                </a>
+                <div class="header__content__child__or">
+                    Or
+                </div>
+                <div class="header__content__child__text">
+                    <div class="header__content__child__text__title">
+                        Order by phone
+                    </div>
+                    <a href="tel:0769724974">
+                        <div class="header__content__child__text__number">
+                            0769-724-974
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__wave">
+            <img src="./home_Page/image/pink_bottom_wave_02.png" alt="">
+        </div>
+    </div>
+    <div class="hightlight">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="hightlight__content">
+                        <div class="hightlight__content__image">
+                            <img src="./home_Page/image/service_01.png" alt="">
+                        </div>
+                        <div class="hightlight__content__text">
+                            <div class="hightlight__content__text__title">
+                                UNIQUE TASTE
+                            </div>
+                            <div class="hightlight__content__text__desc">
+                                Leverage agile frameworks to provide a robust
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 hightlight__content__special">
+                    <div class="hightlight__content">
+                        <div class="hightlight__content__image">
+                            <img src="./home_Page/image/service_02.png" alt="">
+                        </div>
+                        <div class="hightlight__content__text">
+                            <div class="hightlight__content__text__title">
+                                CLICK & COLLECT
+                            </div>
+                            <div class="hightlight__content__text__desc">
+                                Leverage agile frameworks to provide a robust
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="hightlight__content">
+                        <div class="hightlight__content__image">
+                            <img src="./home_Page/image/service_03.png" alt="">
+                        </div>
+                        <div class="hightlight__content__text">
+                            <div class="hightlight__content__text__title">
+                                HOME DELIVERY
+                            </div>
+                            <div class="hightlight__content__text__desc">
+                                Leverage agile frameworks to provide a robust
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 hightlight__content__special">
+                    <div class="hightlight__content">
+                        <div class="hightlight__content__image">
+                            <img src="./home_Page/image/service_04.png" alt="">
+                        </div>
+                        <div class="hightlight__content__text">
+                            <div class="hightlight__content__text__title">
+                                EASY PAYMENT
+                            </div>
+                            <div class="hightlight__content__text__desc">
+                                Leverage agile frameworks to provide a robust
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about__wave-top">
+            <img src="./home_Page/image/pink_top_wave.png" alt="">
+        </div>
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-5 col-md-0 col-sm-0">
+                    <div class="about-image">
+                        <img src="./home_Page/image/home_03_image_01.jpg" alt="">
+                        <div class="about-image__wave">
+                            <img src="./home_Page/image/purple-detail-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12 about__content-wrap">
+                    <div class="about__content">
+                        <div class="about__content__type">
+                            ABOUT US
+                        </div>
+                        <div class="about__content__main-text">
+                            Handcrafted
+                            <span class="about__content__main-text__special">
+                                donuts
+                            </span>
+                            & curated gift boxes
+                            <span class="about__content__main-text__special">
+                                delivered
+                            </span>
+                            to your home or event
+                        </div>
+                        <a href="./about-us_Page/index_about-us.html">
+                            <div class="about__content__link">
+                                <span class="about__content__link-text">
+                                    READ MORE
+                                </span>
+                                <div class="about__content__link-icon">
+                                    <i class="ti-arrow-circle-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="about__content__child">
+                            <div class="about__content__child__item">
+                                <div class="about__content__child__item__icon">
+                                    <i class="ti-hand-open"></i>
+                                </div>
+                                <div class="about__content__child__item__text">
+                                    <div class="about__content__child__item__text-title">
+                                        Hand Crafted
+                                    </div>
+                                    <div class="about__content__child__item__text-desc">
+                                        Chocolate cake cotton candy bonbon jelly beans.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__content__child__item">
+                                <div class="about__content__child__item__icon">
+                                    <i class="ti-heart"></i>
+                                </div>
+                                <div class="about__content__child__item__text">
+                                    <div class="about__content__child__item__text-title">
+                                        Gluten Free
+                                    </div>
+                                    <div class="about__content__child__item__text-desc">
+                                        Chupa chups wafer tiramisu. Chocolate cake I love.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__wave-bottom">
+            <img src="./home_Page/image/white_bottom_wave_02.png" alt="">
+        </div>
+    </div>
+    <div class="about-mobile">
+        <div class="about-mobile__wave-top">
+            <img src="./home_Page/image/pink_top_wave.png" alt="">
+        </div>
+        <div class="container">
+            <div class="about-mobile__type">
+                About
+            </div>
+            <div class="about-mobile__main">
+                Handcrafted
+                <span class="about__content__main__special">
+                    donuts
+                </span>
+                & curated gift boxes
+                <span class="about__content__main__special">
+                    delivered
+                </span>
+                to your home or event
+            </div>
+            <a href="./about-us_Page/index_about-us.html">
+                <div class="about-mobile__link">
+                    <div class="about-mobile__link-text">
+                        READ MORE
+                    </div>
+                    <div class="about-mobile__link-icon">
+                        <i class="ti-arrow-circle-right"></i>
+                    </div>
+                </div>
+            </a>
+            <div class="about-mobile__content">
+                <div class="about-mobile__content-item">
+                    <div class="about-mobile__content-item__icon">
+                        <i class="ti-hand-open"></i>
+                    </div>
+                    <div class="about-mobile__content-item__text">
+                        <div class="about-mobile__content-item__text-title">
+                            Hand Crafted
+                        </div>
+                        <div class="about-mobile__content-item__text-desc">
+                            Chocolate cake cotton candy bonbon jelly beans.
+                        </div>
+                    </div>
+                </div>
+                <div class="about-mobile__content-item">
+                    <div class="about-mobile__content-item__icon">
+                        <i class="ti-heart"></i>
+                    </div>
+                    <div class="about-mobile__content-item__text">
+                        <div class="about-mobile__content-item__text-title">
+                            Gluten Free
+                        </div>
+                        <div class="about-mobile__content-item__text-desc">
+                            Chupa chups wafer tiramisu. Chocolate cake I love.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-mobile__wave-bottom">
+            <img src="./home_Page/image/white_bottom_wave_02.png" alt="">
+        </div>
+    </div>
+    <div class="trending-main__product">
+        <div class="trending-product__main__title">
+            Our Donuts
+        </div>
+        <div class="container-xl">
+            <div class="row trending-product__content-wrap">
+            
+            </div>
+        </div>
+        <div class="trending-main__product__wave-bottom">
+            <img src="./home_Page/image/pink_bottom_wave_03.png" alt="">
+        </div>
+    </div>
+    <div class="new-product">
+        <div class="container-xl new-product__content">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="new-product__image">
+                        <img src="./home_Page/image/donut_01.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 new-product__text__content-wrapper">
+                    <div class="new-product__text">
+                        <div class="new-product__text__title">
+                            Caramel & Vanila
+                            <span class="new-product__text__title__desc">
+                                (Coming soon)
+                            </span>
+                        </div>
+                        <div class="new-product__text__box">
+                            <div class="new-product__text__box__content">
+                                <div class="new-product__text__box__content__price">
+                                    $
+                                    <div class="new-product__text__box__content__price-number">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="new-product__text__box__content__desc">
+                                    Portion / 257 kcal
+                                </div>
+                            </div>
+                            <a href="https://www.facebook.com/Loi.VTL1108/" target="_blank">
+                                <div class="new-product__text__box__content__btn">
+                                    <i class="ti-facebook"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xl new-product__image-background__wrap">
+            <div class="new-product__image-background">
+                <img src="./home_Page/image/slider_shape.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="delivery">
+        <div class="delivery__wave-top">
+            <img src="./home_Page/image/pink_top_wave.png" alt="">
+        </div>
+        <div class="container-xl">
+            <div class="delivery__content">
+                <div class="delivery__content__text-wrapper">
+                    <div class="delivery__content__type">
+                        DONUT DELIVERY
+                    </div>
+                    <div class="delivery__content__title">
+                        Handcrafted donuts, cookies & curated
+                        <span>
+                            gift boxes
+                        </span>
+                    </div>
+                    <div class="delivery__content__link">
+                        <a href="./delivery_Page/index-delivery.html">
+                            <span class="delivery__content__link__text">
+                                READ MORE
+                            </span>
+                            <div class="deliver__content__link__icon">
+                                <i class="ti-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="delivery__content__box-list">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="delivery__content__box-item">
+                                    <div class="delivery__content__box-item__image">
+                                        <img src="./home_Page/image/home_03_image_03.jpg" alt="">
+                                    </div>
+                                    <div class="delivery__content__box-item__content">
+                                        <div class="delivery__content__box-item__content__icon">
+                                            <i class="ti-check-box"></i>
+                                        </div>
+                                        <div class="delivery__content__box-item__content__text">
+                                            40+ Flavours
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="delivery__content__box-item">
+                                    <div class="delivery__content__box-item__image">
+                                        <img src="./home_Page/image/home_03_image_04.jpg" alt="">
+                                    </div>
+                                    <div class="delivery__content__box-item__content">
+                                        <div class="delivery__content__box-item__content__icon">
+                                            <i class="ti-check-box"></i>
+                                        </div>
+                                        <div class="delivery__content__box-item__content__text">
+                                            Order for Takeaway
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="delivery__content__box-item">
+                                    <div class="delivery__content__box-item__image">
+                                        <img src="./home_Page/image/home_03_image_05.jpg" alt="">
+                                    </div>
+                                    <div class="delivery__content__box-item__content">
+                                        <div class="delivery__content__box-item__content__icon">
+                                            <i class="ti-check-box"></i>
+                                        </div>
+                                        <div class="delivery__content__box-item__content__text">
+                                            FREE Delivery
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery__wave-bottom">
+            <img src="./home_Page/image/white_bottom_wave_03.png" alt="">
+        </div>
+    </div>
+    <div class="feedback">
+        <div class="feedback__title">
+            Testimonials
+        </div>
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="feedback__content">
+                                <div class="feedback__content__text">
+                                    <div class="feedback__content__text__favor-icon">
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                    </div>
+                                    <div class="feedback__content__text__title">
+                                        Donuts are out of this world!
+                                    </div>
+                                    <div class="feedback__content__text__desc">
+                                        Oh My GOODNESS!! Absolutely best doughnut I have ever had! I’d have to say that
+                                        they are the PERFECT doughnuts!!
+                                    </div>
+                                    <div class="feedback__content__text__author">
+                                        Ginger & Shane B.
+                                    </div>
+                                </div>
+                                <div class="feedback__content__image">
+                                    <img src="./home_Page/image/donut_gallery_01.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="feedback__content">
+                                <div class="feedback__content__text">
+                                    <div class="feedback__content__text__favor-icon">
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                    </div>
+                                    <div class="feedback__content__text__title">
+                                        Honestly the best!
+                                    </div>
+                                    <div class="feedback__content__text__desc">
+                                        Can not recommend this place enough, donut toasties are super unique. The owners
+                                        are very personable and the service is top notch.
+                                    </div>
+                                    <div class="feedback__content__text__author">
+                                        Marta
+                                    </div>
+                                </div>
+                                <div class="feedback__content__image">
+                                    <img src="./home_Page/image/donut_gallery_03.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="feedback__content">
+                                <div class="feedback__content__text">
+                                    <div class="feedback__content__text__favor-icon">
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                        <i class="ti-medall"></i>
+                                    </div>
+                                    <div class="feedback__content__text__title">
+                                        Wow! </div>
+                                    <div class="feedback__content__text__desc">
+                                        This place is amazing!!! Wonderful people working there and the donuts are
+                                        incredible. Best donuts I’ve ever tried!!
+                                    </div>
+                                    <div class="feedback__content__text__author">
+                                        Julia </div>
+                                </div>
+                                <div class="feedback__content__image">
+                                    <img src="./home_Page/image/donut_gallery_04.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="feedback__wave-bottom">
+            <img src="./home_Page/image/pink_bottom_wave.png" alt="">
+        </div>
+    </div>
+    <div class="submit">
+        <div class="container-xl">
+            <div class="submit-title">
+                <div class="submit-title__text">
+                    Newsletter
+                </div>
+                <div class="submit-title__desc">
+                    Stay Informed About Special offers!
+                </div>
+            </div>
+            <div class="submit-form">
+                <div class="submit__form__input-wrapper">
+                    <input class="submit-form__input" type="text" placeholder="Enter Your Email">
+                    <div class="submit-form__btn" onclick="handelSubmitSubcribe()">
+                        Subscribe
+                    </div>
+                </div>
+                <div class="submit__form__type">
+                </div>
+            </div>
+        </div>
+        <div class="submit-wave">
+            <img src="../Main-image/white_bottom_wave.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-xl">
+            <div class="footer-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="footer-nav__list">
+                                <a href="./index.html">
+                                    <div class="footer-nav__list__item">
+                                        HOME
+                                    </div>
+                                </a>
+                                <a href="./about-us_Page/index_about-us.html">
+                                    <div class="footer-nav__list__item">
+                                        ABOUT US
+                                    </div>
+                                </a>
+                                <a href="./contact_Page/index-contact.html">
+                                    <div class="footer-nav__list__item">
+                                        CONTACT
+                                    </div>
+                                </a>
+                                <a href="./delivery_Page/index-delivery.html">
+                                    <div class="footer-nav__list__item">
+                                        DELIVERY
+                                    </div>
+                                </a>
+                                <a href="./blog_Page/index-blog.html">
+                                    <div class="footer-nav__list__item">
+                                        BLOG
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="footer-nav__social">
+                                <div class="footer-nav__social__item">
+                                    <i class="ti-instagram"></i>
+                                </div>
+                                <div class="footer-nav__social__item">
+                                    <i class="ti-twitter-alt"></i>
+                                </div>
+                                <a href="https://www.facebook.com/Loi.VTL1108/" target="_blank">
+                                    <div class="footer-nav__social__item">
+                                        <i class="ti-facebook"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                Develop By VoThuanLoi
+            </div>
+        </div>
+    </div>
+    <div class="modal-loading active">
+        <div class="modal-loading__content"></div>
+    </div>
+
+
+    <!--Nav Mobile Content-->
+    <div class="modal-nav">
+        <div class="nav__content">
+            <a href="./index.html">
+                <div class="nav__content__logo">
+                    <img src="./Main-image/logo_light.png" alt="">
+                </div>
+            </a>
+            <div class="nav__content__list">
+                <a href="./index.html">
+                    <div class="nav__content__item">
+                        HOME
+                    </div>
+                </a>
+                <a href="./about-us_Page/index_about-us.html">
+                    <div class="nav__content__item">
+                        ABOUT US
+                    </div>
+                </a>
+                <a href="./contact_Page/index-contact.html">
+                    <div class="nav__content__item">
+                        CONTACT
+                    </div>
+                </a>
+                <a href="./delivery_Page/index-delivery.html">
+                    <div class="nav__content__item">
+                        DELIVERY
+                    </div>
+                </a>
+                <a href="./blog_Page/index-blog.html">
+                    <div class="nav__content__item">
+                        BLOG
+                    </div>
+                </a>
+                <div class="nav__content__social">
+                    <div class="nav__content__social__icon">
+                        <i class="ti-instagram"></i>
+                        <i class="ti-twitter-alt"></i>
+                        <a href="https://www.facebook.com/Loi.VTL1108/" target="_blank">
+                            <i class="ti-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="nav__content__social__cart">
+                        <a href="./cart_Page/index_cart.html">
+                            <div class="nav__content__social__cart__content__wrapper">
+                                <div class="nav__content__social__cart__icon">
+                                    <i class="ti-shopping-cart"></i>
+                                </div>
+                                <div class="product-pc__list__cart-value__content nav">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav__content__button">
+                    <a href="./menu_Page/index-menu.html">
+                        <span class="nav__content__button__child">
+                            OUR DONUTS
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav__content__close" onclick="handelCloseNavMobile()">
+                <i class="ti-close"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./module_Function/handelContentFunction.js"></script>
+    <script src="./module_Function/handelDetailPage.js"></script>
+    <script src="./module_Function/handelLoading.js"></script>
+    <script src="./module_Function/handelCartButton.js"></script>
+    <script type="module" src="./home_Page/javascript/handel-product_home.js"></script>
+    <script type="module" src="./home_Page/javascript/main-home.js"></script>
+</body>
+
+</html>

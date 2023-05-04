@@ -1,0 +1,75 @@
+
+[
+    {
+        "nameLocation": "Quận 1",
+        "type": 1
+    },
+    {
+        "nameLocation": "Quận 2",
+        "type": 1
+    },
+    {
+        "nameLocation": "Quận 3",
+        "type": 2
+    },
+    {
+        "nameLocation": "Quận 4",
+        "type": 1
+    },
+    {
+        "nameLocation": "Quận 5",
+        "type": 2
+    },
+    {
+        "nameLocation": "Quận 6",
+        "type": 2
+    },
+    {
+        "nameLocation": "Quận 7",
+        "type": 1
+    },
+    {
+        "nameLocation": "Quận 8",
+        "type": 2
+    },
+    {
+        "nameLocation": "Quận 9",
+        "type": 3
+    },
+    {
+        "nameLocation": "Quận 10",
+        "type": 3
+    },
+    {
+        "nameLocation": "Quận 11",
+        "type": 3
+    },
+    {
+        "nameLocation": "Quận 12",
+        "type": 3
+    },
+    {
+        "nameLocation": "Quận Thủ Đức",
+        "type": 3
+    },
+    {
+        "nameLocation": "Quận Gò Vấp",
+        "type": 3
+    },
+    {
+        "nameLocation": "Quận Bình Thạnh",
+        "type": 1
+    },
+    {
+        "nameLocation": "Quận Tân Bình",
+        "type": 3
+    },
+    {
+        "nameLocation": "Quận Tân Phú",
+        "type": 2
+    },
+    {
+        "nameLocation": "Quận Bình Tân",
+        "type": 2
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "idProduct": "101",
+        "type": "Glazed",
+        "nameProduct": "Strawberry Filled Sprinkles",
+        "description": "Ice cream dessert muffin cheesecake pastry chocolate bar brownie. Croissant tart icing. Beans bears brownie carrot chupa cotton croissant cupcake gummi gummies ice icing jujubes lemon lollipop macaroon muffin pastry pudding sesame snaps sweet tart wafer wypas.",
+        "ingredients": "Strawberry glazed with strawberry cream filling",
+        "image": "./Content/Product_Image/d1.png",
+        "price": 12,
+        "recomment": ["102", "105", "106"], 
+        "trending": 1
+    },
+    {
+        "idProduct": "102",
+        "type": "Glazed",
+        "nameProduct": "Chocolate Sugar Glazed",
+        "description": "Gingerbread soufflé sesame snaps marzipan biscuit marshmallow chocolate cake. Apple bears brownie carrot chocolate chups cookie fruitcake gingerbread gummi icing jelly-o jujubes lollipop macaroon muffin pie roll sesame sugar sweet tart toffee tootsie topping.",
+        "ingredients": "Chocolate glazed with chocolate cream filling",
+        "image": "./Content/Product_Image/d2.png",
+        "price": 10,
+        "recomment": ["101", "105", "106"],
+        "trending": 1
+    },
+    {
+        "idProduct": "103",
+        "type": "Glazed",
+        "nameProduct": "Caramel Glazed",
+        "description": "Apple pie topping candy I love jelly-o jelly beans I love pie. Jelly-o liquorice I love halvah caramels jelly I love. Bears biscuit brownie candy caramels carrot cheesecake gummies jelly muffin plum powder pudding snaps tart tiramisu wafer wypas. Beans cake canes caramels cheesecake chocolate.",
+        "ingredients": "Caramel glazed with white sugar",
+        "image": "./Content/Product_Image/d3.png",
+        "price": 12,
+        "recomment": ["101", "102", "104"],
+        "trending": 0
+    },
+    {
+        "idProduct": "104",
+        "type": "Glazed",
+        "nameProduct": "Chocolate Chips Donut",
+        "description": "Sweet muffin gummies tart. Powder pastry pudding bonbon muffin chocolate cake danish. Applicake bar beans canes carrot cheesecake chocolate chupa cookie cotton dessert drops gingerbread gummi icing jelly-o jujubes lollipop macaroon pastry plum powder snaps sweet tootsie wafer wypas.",
+        "ingredients": "Strawberry cream, covered with chocolate",
+        "image": "./Content/Product_Image/d4.png",
+        "price": 12,
+        "recomment": ["101", "102", "103"],
+        "trending": 1
+    },
+    {
+        "idProduct": "105",
+        "type": "Glazed",
+        "nameProduct": "Strawberry Mix White Chocolate",
+        "description": "Ice cream dessert muffin cheesecake pastry chocolate bar brownie. Croissant tart icing. Beans bears brownie carrot chupa cotton croissant cupcake gummi gummies ice icing jujubes lemon lollipop macaroon muffin pastry pudding sesame snaps sweet tart wafer wypas.",
+        "ingredients": "Strawberry glazed with strawberry cream and white chocolate chips",
+        "image": "./Content/Product_Image/d5.png",
+        "price": 12,
+        "recomment": ["101", "102", "106"],
+        "trending": 1
+    },
+    {
+        "idProduct": "106",
+        "type": "Glazed",
+        "nameProduct": "Lime Chocolate Ring",
+        "description": "Apple bear brownie canes chocolate chupa chups cookie cupcake dessert drops faworki gummi ice jelly lollipop pie powder sesame snaps sugar sweet tart tiramisu toffee topping wafer. Applicake cake canes carrot cheesecake croissant drops gingerbread ice jelly-o jujubes lollipop pastry pie sesame snaps sugar toffee topping wafer.",
+        "ingredients": "Almond covered with chocolate cream filling",
+        "image": "./Content/Product_Image/d6.png",
+        "price": 10,
+        "recomment": ["101", "102", "105"],
+        "trending": 0
+    }
+]

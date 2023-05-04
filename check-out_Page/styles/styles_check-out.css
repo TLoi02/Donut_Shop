@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root{
+    --special-font: 'Rakkas', cursive;
+    --form-title-font: 'Modak', cursive;
+    --form-desc-font: 'Fredoka One', cursive;
+    --background-color: #F5E7C1;
+    --primary-color: #FF5D47;
+    --form-color: #FAC7B1;
+    --form-text-color: #FF5D47;
+    --text-color: #121212;
+    --quesition-color: #F5E7C1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Header layout*/
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/featured_image_shop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+.header__wave-bottom img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    object-fit: cover;
+}
+
+
+/*Content Layout*/
+.content-wrapper{
+    padding: 120px 0;
+    background-color: var(--background-color);
+}
+.content{
+    padding: 60px;
+    background-color: white;
+    border-radius:20px;
+    font-family: 'Inter', sans-serif;
+}
+.content__info{
+
+}
+.content__info__title, .content__note__title{
+    font-family: var(--special-font);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.content__info__form__firt-name,
+.content__info__form__last-name,
+.content__info__form__company-name,
+.content__info__form__street-name,
+.content__info__form__city-name,
+.content__info__form__phone-name,
+.content__info__form__email-name,
+.content__info__form__district-name,
+.content__note__child{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#form_first-name,
+#form_last-name,
+#form_company-name,
+#form_street-name,
+#form_city-name,
+#form_phone-name,
+#form_email-name,
+#form_district-name{
+    max-width: 90%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    outline-color: var(--primary-color);
+    margin-top:10px;
+}
+#content__note__input{
+    resize: none;
+    width: 80%;
+    height: 150px;
+    border-radius: 20px;
+    padding: 20px;
+    outline-color: var(--primary-color);
+    margin-top:10px;
+}
+
+
+/*Order Layout*/
+.order{
+
+}
+.order__title{
+    font-size: 30px;
+    font-family: var(--special-font);
+    margin-bottom: 20px;
+}
+.table thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+thead th:first-child {
+    border-radius: 100px 0 0 100px;
+}
+thead th:nth-child(2){
+    text-align:right;
+
+}
+thead th:last-child {
+    border-radius: 0 100px 100px 0;
+}
+
+.order__content__table__product__title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#form_city-name{
+    border-color: green;
+    outline-color: green;
+}
+
+
+/*Button CheckOut Layout*/
+.content__checkout__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.content__checkout__button__child{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+}
