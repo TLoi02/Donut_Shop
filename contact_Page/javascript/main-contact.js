@@ -1,3 +1,10 @@
+import handelFunction from '/module_Function/handelContentModule.js'
+
+function start(){
+    handelFunction.handelScrollHeader();
+}
+
+start();
 
 function handelAnswer(id){
     const icon = document.getElementById(`icon-${id}`);

@@ -20,14 +20,18 @@
             <div class="container-xl">
                 <div class="nav-pc">
                     <div class="nav-pc__list">
-                        <div class="nav-pc__logo">
-                            <img src="../Main-image/logo.png" alt="">
-                        </div>
+                        <a href="../index.html">
+                            <div class="nav-pc__logo">
+                                <img src="../Main-image/logo.png" alt="">
+                            </div>
+                        </a>
                         <div class="nav-pc__links">
                             <div class="nav-pc__item">
-                                <span class="nav-pc__item__title">
-                                    HOME
-                                </span>
+                                <a href="../index.html">
+                                    <span class="nav-pc__item__title">
+                                        HOME
+                                    </span>
+                                </a>
                             </div>
                             <div class="nav-pc__item nav-pc__title-about">
                                 <span class="nav-pc__item__title">
@@ -35,14 +39,18 @@
                                 </span>
                                 <div class="nav-pc__about">
                                     <div class="nav-pc__about__item">
-                                        <span class="nav-pc__about__item__title">
-                                            ABOUT US
-                                        </span>
+                                        <a href="../about-us_Page/index_about-us.html">
+                                            <span class="nav-pc__about__item__title">
+                                                ABOUT US
+                                            </span>
+                                        </a>
                                     </div>
                                     <div class="nav-pc__about__item">
-                                        <span class="nav-pc__about__item__title">
-                                            DELIVERY
-                                        </span>
+                                        <a href="../delivery_Page/index-delivery.html">
+                                            <span class="nav-pc__about__item__title">
+                                                DELIVERY
+                                            </span>
+                                        </a>
                                     </div>
                                     <div class="nav-pc__about__item">
                                         <a href="../contact_Page/index-contact.html">
@@ -54,9 +62,11 @@
                                 </div>
                             </div>
                             <div class="nav-pc__item">
-                                <span class="nav-pc__item__title">
-                                    BLOG
-                                </span>
+                                <a href="../blog_Page/index-blog.html">
+                                    <span class="nav-pc__item__title">
+                                        BLOG
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -70,8 +80,43 @@
                                     0769-724-974
                                 </a>
                             </div>
+
+                            <!--Cart Layout-->
+                            <div class="cart-pc__layout">
+                                <div class="cart-pc__layout__noitem active">
+                                    No products in the cart.
+                                </div>
+                                <div class="cart__pc__layout__content">
+                                    <div class="cart__pc__layout__content__list">
+                                       
+                                    </div>
+                                    <div class="cart__pc__layout__content__price">
+                                        <div class="cart__pc__layout__content__text">
+                                            Subtotal: 
+                                        </div>
+                                        <div class="cart__pc__layout__content__price__content">
+                                            $ <span class="cart__pc__layout__content__price__content__value">
+                                               12
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="cart__pc__layout__content__button">
+                                        <div class="cart__pc__layout__content__button__item">
+                                            <a href="../cart_Page/index_cart.html">
+                                                VIEW CART
+                                            </a>
+                                        </div>
+                                        <div class="cart__pc__layout__content__button__item">
+                                            <a href="../check-out_Page/index_check-out.html">
+                                                CHECK OUT
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="nav-pc__list__cart">
+                        <div class="nav-pc__list__cart" onclick="handelCartLayout()">
                             <div class="product-pc__list__cart-icon">
                                 <i class="ti-shopping-cart"></i>
                             </div>
@@ -96,97 +141,15 @@
                     <div class="nav-mobile__logo">
                         <img src="../Main-image/logo.png" alt="">
                     </div>
-                    <div class="nav-moblie__icon-nav">
+                    <div class="nav-moblie__icon-nav" onclick="handelNavMobile()">
                         <i class="ti-menu"></i>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="header-wave">
-            <img src="./image/cream_bottom_wave_01.png" alt="">
-        </div>
-    </div>
-    <div class="header-scroll">
-        <div class="container-xl">
-            <div class="nav-pc-scroll">
-                <div class="nav-pc__list-scroll">
-                    <div class="nav-pc__logo-scroll">
-                        <img src="../Main-image/logo.png" alt="">
-                    </div>
-                    <div class="nav-pc__links-scroll">
-                        <div class="nav-pc__item-scroll">
-                            <span class="nav-pc__item__title-scroll">
-                                HOME
-                            </span>
-                        </div>
-                        <div class="nav-pc__item-scroll nav-pc__title-about">
-                            <span class="nav-pc__item__title-scroll">
-                                ABOUT
-                            </span>
-                            <div class="nav-pc__about">
-                                <div class="nav-pc__about__item">
-                                    <span class="nav-pc__about__item__title">
-                                        ABOUT US
-                                    </span>
-                                </div>
-                                <div class="nav-pc__about__item">
-                                    <span class="nav-pc__about__item__title">
-                                        DELIVERY
-                                    </span>
-                                </div>
-                                <div class="nav-pc__about__item">
-                                    <a href="../contact_Page/index-contact.html">
-                                        <span class="nav-pc__about__item__title">
-                                            CONTACT
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-pc__item-scroll">
-                            <span class="nav-pc__item__title-scroll">
-                                BLOG
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-pc__list-scroll">
-                    <div class="nav-pc__list__cart-phone">
-                        <div class="nav-pc__list__cart-phone__title">
-                            <span>Order by phone</span>
-                        </div>
-                        <div class="nav-pc__list__cart-phone__number">
-                            <a href="tel:0769724974">
-                                0769-724-974
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav-pc__list__cart">
-                        <div class="product-pc__list__cart-icon">
-                            <i class="ti-shopping-cart"></i>
-                        </div>
-                        <div class="product-pc__list__cart-value__scroll">
-                            <span class="product-pc__list__cart-value__content">
-
-                            </span>
-                        </div>
-                    </div>
-                    <a href="../menu_Page/index-menu.html" class="nav-wrap__link">
-                        <div class="nav-pc__menu-scroll">
-                            VIEW FULL MENU
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-mobile-scroll">
-                <div class="nav-mobile-scroll__logo">
-                    <img src="../Main-image/logo.png" alt="">
-                </div>
-                <div class="nav-moblie-scroll__icon-nav">
-                    <i class="ti-menu"></i>
-                </div>
-            </div>
+        
+        <div class="header__wave-bottom">
+            <img src="./image/red_bottom_wave_01.png" alt="">
         </div>
     </div>
     <div class="delivery">
@@ -448,6 +411,74 @@
         <div class="modal-loading__content"></div>
     </div>
 
+
+    <!--Nav Mobile Content-->
+    <div class="modal-nav">
+        <div class="nav__content">
+            <a href="../index.html">
+                <div class="nav__content__logo">
+                    <img src="../Main-image/logo_light.png" alt="">
+                </div>
+            </a>
+            <div class="nav__content__list">
+                <a href="../index.html">
+                    <div class="nav__content__item">
+                        HOME
+                    </div>
+                </a>
+                <a href="../about-us_Page/index_about-us.html">
+                    <div class="nav__content__item">
+                        ABOUT US
+                    </div>
+                </a>
+                <a href="../contact_Page/index-contact.html">
+                    <div class="nav__content__item">
+                        CONTACT
+                    </div>
+                </a>
+                <a href="../delivery_Page/index-delivery.html">
+                    <div class="nav__content__item">
+                        DELIVERY
+                    </div>
+                </a>
+                <a href="../blog_Page/index-blog.html">
+                    <div class="nav__content__item">
+                        BLOG
+                    </div>
+                </a>
+                <div class="nav__content__social">
+                    <div class="nav__content__social__icon">
+                        <i class="ti-instagram"></i>
+                        <i class="ti-twitter-alt"></i>
+                        <a href="https://www.facebook.com/Loi.VTL1108/" target="_blank">
+                            <i class="ti-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="nav__content__social__cart">
+                        <a href="../cart_Page/index_cart.html">
+                            <div class="nav__content__social__cart__content__wrapper">
+                                <div class="nav__content__social__cart__icon">
+                                    <i class="ti-shopping-cart"></i>
+                                </div>
+                                <div class="product-pc__list__cart-value__content nav">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav__content__button">
+                    <a href="../menu_Page/index-menu.html">
+                        <span class="nav__content__button__child">
+                            OUR DONUTS
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav__content__close" onclick="handelCloseNavMobile()">
+                <i class="ti-close"></i>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

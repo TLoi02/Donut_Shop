@@ -1,9 +1,8 @@
-import handelScrollHeader from '/module_Function/handelScrollHeader.js'
+import handelFunction from '/module_Function/handelContentModule.js'
 
 function start(){
 
-    handelScrollHeader();
-
+    handelFunction.handelScrollHeader();
 }
 
 

@@ -23,7 +23,7 @@ function renderBlog(data){
                 <div class="blog__item">
                     <div class="blog__item__image" onclick="handelBlog(${item.idBlog})">
                         <a href="../detail-blog_Page/index_detail-blog.html">
-                            <img src="${item.image}" alt="">
+                            <img src=".${item.image}" alt="">
                         </a>
                     </div>
                     <div class="blog__item__content">

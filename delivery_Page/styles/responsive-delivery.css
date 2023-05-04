@@ -11,7 +11,23 @@
     .nav-pc__wrap{
         display: none;
     }
-    .submit-form{
+    .header__content__title{
+        font-size:30px;
+    }
+    .header__content__child{
+        flex-direction: column;
+    }
+    .header__content__child__or{
+        margin: 15px 0;
+    }
+    .header__content__child__text{
+        text-align: center;
+    }
+    .nav__content{
+        width: 70%;
+    }
+    
+    .submit__form__input-wrapper{
         background-color: transparent;
         justify-content: center;
     }
@@ -29,16 +45,8 @@
     .footer-nav__social{
         margin-top: 25px;
     }
-    .nav-pc-scroll{
-        display: none;
-    }
-    .nav-mobile-scroll{
-        display: block;
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
-    .nav-mobile-scroll__logo img, .nav-mobile__logo img{
+
+    .nav-mobile__logo img{
         width: 93px;
         height: 60px;
         object-fit: contain;
@@ -53,7 +61,7 @@
         justify-content: center;
         position: relative;
     }
-    .nav-moblie__icon-nav,.nav-moblie-scroll__icon-nav{
+    .nav-moblie__icon-nav{
         position: absolute;
         left: 20px;
         top: 50%;

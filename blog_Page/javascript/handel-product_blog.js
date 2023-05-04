@@ -16,7 +16,7 @@ function renderBlog(data){
             <div class="blog-content__item">
                 <a href="../detail-blog_Page/index_detail-blog.html">
                     <div class="blog-content__item__image" onclick="handelBlog(${blog.idBlog})">
-                        <img src="${blog.image}" alt="">
+                        <img src=".${blog.image}" alt="">
                     </div>
                 </a>
                 <div class="blog-content__item__text">
@@ -76,7 +76,7 @@ function renderRecentBlog(data) {
         <div class="recent-post__content__item">
             <div class="recent-post__content__item__image" onclick="handelBlog(${blog.idBlog})">
                 <a href="../detail-blog_Page/index_detail-blog.html">
-                    <img src="${blog.image}" alt="">
+                    <img src=".${blog.image}" alt="">
                 </a>
             </div>
             <div class="recent-post__content__item__text">

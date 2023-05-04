@@ -87,17 +87,13 @@ function renderCartLayout(data){
             const htmlCode = productCartSuccess.map(item => {
                 return `
                 <div class="cart__pc__layout__content__item">
-                    <a href="./detail-product_Page/index-detail.html">
                         <div class="cart__pc__layout__content__item__image" onclick="handelDetailPage(${item.idProduct})">
-                            <img src="${item.image}" alt="">
+                            <img src=".${item.image}" alt="">
                         </div>
-                    </a>
                     <div class="cart__pc__layout__content__item__text">
-                        <a href="./detail-product_Page/index-detail.html">
-                            <div class="cart__pc__layout__content__item__text__title" onclick="handelDetailPage(${item.idProduct})">
+                            <div class="cart__pc__layout__content__item__text__title">
                                 ${item.nameProduct}
                             </div>
-                        </a>
                         <div class="cart__pc__layout__content__item__value">
                             <div class="cart__pc__layout__content__item__value__quanlity">
                                 ${item.quanlity} x

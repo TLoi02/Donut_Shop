@@ -1,10 +1,10 @@
-import handelScrollHeader from '/module_Function/handelScrollHeader.js'
-import renderValueCartIcon from '/module_Function/renderValueCartIcon.js'
+import getProduct from '/module_Function/getProduct.js';
+import handelFunction from '/module_Function/handelContentModule.js';
 
 function start(){
-
-    handelScrollHeader();
-    renderValueCartIcon();
+    getProduct(handelFunction.renderCartLayout);
+    handelFunction.renderValueCartIcon();
+    
 }
 
 

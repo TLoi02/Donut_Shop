@@ -1,10 +1,11 @@
 import getProduct from '/module_Function/getProduct.js'
-import renderValueCartIcon from '/module_Function/renderValueCartIcon.js';
+import getProduct from '/module_Function/getProduct.js';
+import handelFunction from '/module_Function/handelContentModule.js';
 
 function start(){
 
     getProduct(renderTrendingProduct);
-    renderValueCartIcon();
+    handelFunction.renderValueCartIcon();
 
 }
 
@@ -22,7 +23,7 @@ function renderTrendingProduct(data){
             <div class="product-item">
                <a href="../detail-product_Page/index-detail.html" onclick="handelDetailPage(${product.idProduct})">
                     <div class="product-item__image">
-                        <img src="${product.image}" alt="">
+                        <img src=".${product.image}" alt="">
                     </div>
                </a>
                 <div class="product-item__type">
