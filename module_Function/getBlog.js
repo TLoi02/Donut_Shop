@@ -1,5 +1,5 @@
 function getBlog(callback) {
-    fetch ('https://my-json-server.typicode.com/TLoi02/JSON_API_BLOGS/Blogs')
+    fetch ('./JSON_DATA/blog.json')
         .then(response => response.json())
         .then(callback)
 }
