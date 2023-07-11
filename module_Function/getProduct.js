@@ -1,5 +1,5 @@
 function getProduct (callback){
-    fetch('https://my-json-server.typicode.com/TLoi02/JSON_API/product')
+    fetch('./JSON_DATA/product.json')
         .then(response => response.json())
         .then(callback)
 }
